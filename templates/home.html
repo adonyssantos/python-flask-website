@@ -1,16 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adonys Santos | Home</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles/style.css' ) }}"
-    />
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
-</html>
+<!-- Extend layout -->
+{% extends 'layout.html' %}
+
+<!-- Set page title -->
+{% block title %}Home{% endblock %}
+
+<!-- Page content -->
+{% block content %}
+
+<!-- Bootstrap Jumbutron -->
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to my Portfolio!</h1>
+  <p class="lead">
+    This portfolio is to show my work on the technical phase of my studies in
+    Cincinnatus.
+  </p>
+  <hr class="my-4" />
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatem at ad
+    itaque optio expedita amet debitis quis laborum dolorum mollitia
+    reprehenderit eaque nulla incidunt sint earum voluptas, harum facilis!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime optio sit
+    ipsum omnis pariatur doloremque cum quos sed corporis vitae? Repudiandae
+    esse eligendi aut voluptatum quia deserunt minus, natus doloribus.
+  </p>
+  <a class="btn btn-primary btn-lg" href="/courses" role="button"
+    >View courses progress</a
+  >
+</div>
+
+{% endblock %}
