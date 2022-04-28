@@ -17,5 +17,5 @@ $ pip install Flask
 
 ```bash
 $ . venv/bin/activate
-$ python3.8 src/index.py
+$ python3.8 index.py
 ```
