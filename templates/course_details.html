@@ -1,0 +1,25 @@
+<!-- Extend layout -->
+{% extends 'layout.html' %}
+
+<!-- Set page title -->
+{% block title %} {{course.name}} Course {% endblock %}
+
+<!-- Page content -->
+{% block content %}
+<!-- back to the courses arrow -->
+
+<div class="container">
+  <h1>{{course.name}}</h1>
+  <p class="lead">{{course.description}}</p>
+  <hr />
+  <h3>Time to complete</h3>
+  <p>{{course.duration}}</p>
+  <h3>Screenshot</h3>
+  <img
+    src="{{course.screenshot_image}}"
+    class="img-fluid rounded mb-3"
+    alt="{{course.name}} Screenshot"
+  />
+</div>
+
+{% endblock %}

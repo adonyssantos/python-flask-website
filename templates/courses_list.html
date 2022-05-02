@@ -1,0 +1,30 @@
+<!-- Extend layout -->
+{% extends 'layout.html' %}
+
+<!-- Set page title -->
+{% block title %}About{% endblock %}
+
+<!-- Page content -->
+{% block content %}
+<h1 class="text-center">Courses</h1>
+<div class="row">
+  {% for course in courses_list %}
+  <div class="col-md-4">
+    <div class="card text-white bg-secondary mb-3">
+      <img
+        class="card-img-top"
+        src="{{ course.image }}"
+        alt="Card image cap {{ course.name }}"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ course.name }}</h5>
+        <p class="card-text">{{ course.description }}</p>
+        <a href="/courses/{{ course.id }}" class="btn btn-primary"
+          >See details</a
+        >
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
