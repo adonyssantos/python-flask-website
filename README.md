@@ -48,7 +48,7 @@ $ python run.py
 #### Run in production mode
 
 ```bash
-$ gunicorn app:app -b
+$ gunicorn app:app
 ```
 
 ## Authors
