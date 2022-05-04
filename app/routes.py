@@ -1,9 +1,6 @@
-from flask import Flask, render_template
-from courses_list import courses_list
-
-app = Flask(__name__)
-PORT = 5000
-DEBUG = True
+from flask import render_template
+from app import app
+from app.courses_list import courses_list
 
 
 @app.route("/")
@@ -32,7 +29,3 @@ def about():
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template("404.html")
-
-
-if __name__ == "__main__":
-    app.run(port=PORT, debug=DEBUG)
