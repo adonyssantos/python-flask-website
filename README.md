@@ -1,21 +1,44 @@
-# python-flask-website
+# Python App Portfolio
+
+This project is the result of a series of tutorials and courses I've taken on Cincinnatus.
+
+## Clone the Repository
+
+```bash
+$ git clone https://github.com/adonyssantos/python-flask-website
+$ cd python-flask-website
+```
 
 ## Setup envoronment
 
 ```bash
-$ python3.8 -m venv venv
-$ . venv/bin/activate
+$ pip install virtualenv
+$ virtualenv .venv
+$ source .venv/bin/activate
 ```
 
-## Installation
+### To activate the virtual environment
 
 ```bash
-$ pip install Flask
+$ source .venv/bin/activate
+```
+
+## Install Dependencies
+
+```bash
+$ pip install -r requirements.txt
 ```
 
 ## Run
 
+### Run in development mode
+
 ```bash
-$ . venv/bin/activate
-$ python3.8 index.py
+$ python run.py
+```
+
+### Run in production mode
+
+```bash
+$ gunicorn app:app -b
 ```
