@@ -31,6 +31,12 @@ $ source .venv/bin/activate
 $ source .venv/bin/activate
 ```
 
+#### To deactivate the virtual environment
+
+```bash
+$ deactivate
+```
+
 ### Install Dependencies
 
 ```bash
