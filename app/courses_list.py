@@ -109,7 +109,14 @@ courses_list = [
         "image": "../static/images/courses/full-stack-web-development.png",
         "duration": "3 hours and 45 minutes",
         "screenshot_image": "../static/images/courses/full-stack-web-development.png",
-    }
-
-
+    },
+    {
+        "id": "software-security",
+        "name": "Software Security",
+        "description": "Learn the fundamentals of software security.",
+        "large_description": "Learn the fundamentals of software security. You'll learn how to protect your web application from SQL injection, cross-site scripting, and other attacks.",
+        "image": "../static/images/courses/software-security.png",
+        "duration": "7 hour and 27 minutes",
+        "screenshot_image": "../static/images/courses/software-security.png",
+    },
 ]
