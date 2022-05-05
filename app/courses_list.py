@@ -1,3 +1,4 @@
+from flask import url_for
 # Template course
 # {
 #     "id": "",
@@ -11,101 +12,104 @@
 
 courses_list = [
     {
-        "id":
-        "1",
-        "name":
-        "Course 1",
-        "description":
-        "The first course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+1",
-        "duration":
-        "3 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        "id": "html-css-intro",
+        "name": "Intro to HTML and CSS",
+        "description": "Learn how to build a simple website with HTML and CSS.",
+        "large_description": "Throughout this course, you'll learn about the underlying structure of the web - HTML. You'll learn how to use this tree-like structure to create websites. You'll also learn how to apply styling to a website through CSS. You'll learn about CSS syntax, selectors, and units. Along the way, you'll also learn about code editors and a browser's Developer Tools.",
+        "image": "../static/images/courses/html-css-intro.png",
+        "duration": "1 hour and 41 minutes",
+        "screenshot_image": "../static/images/courses/html-css-intro.png",
     },
     {
-        "id":
-        "2",
-        "name":
-        "Course 2",
-        "description":
-        "The second course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+2",
-        "duration":
-        "4 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        "id": "javascript-intro",
+        "name": "Intro to JavaScript",
+        "description": "Fundamentals of the JavaScript Syntax",
+        "large_description": "Learn the fundamentals of JavaScript, the most popular programming language in web development.",
+        "image": "../static/images/courses/javascript-intro.png",
+        "duration": "3 hours and 30 minutes",
+        "screenshot_image": "../static/images/courses/javascript-intro.png",
     },
     {
-        "id":
-        "3",
-        "name":
-        "Course 3",
-        "description":
-        "The third course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+3",
-        "duration":
-        "5 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        "id": "oop-javascript",
+        "name": "Object-Oriented JavaScript",
+        "description": "Learn the fundamentals of object-oriented programming in JavaScript.",
+        "large_description": "Learn the fundamentals of object-oriented programming in JavaScript. You'll learn how to create objects, how to define properties and methods, and how to use inheritance.",
+        "image": "../static/images/courses/oop-javascript.png",
+        "duration": "6 hours and 34 minutes",
+        "screenshot_image": "../static/images/courses/oop-javascript.png",
     },
     {
-        "id":
-        "4",
-        "name":
-        "Course 4",
-        "description":
-        "The fourth course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+4",
-        "duration":
-        "6 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        "id": "responsive-web-design",
+        "name": "Responsive Web Design Fundamentals",
+        "description": "Learn the fundamentals of responsive web design.",
+        "large_description": "Learn the fundamentals of responsive web design. You'll learn how to create a responsive website that works on mobile, tablet, and desktop screens.",
+        "image": "../static/images/courses/responsive-web-design.png",
+        "duration": "1 hour and 57 minutes",
+        "screenshot_image": "../static/images/courses/responsive-web-design.png",
     },
     {
-        "id":
-        "5",
-        "name":
-        "Course 5",
-        "description":
-        "The fifth course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+5",
-        "duration":
-        "7 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        "id": "responsive-images",
+        "name": "Responsive Images",
+        "description": "Learn how to use responsive images.",
+        "large_description": "Learn how to use responsive images. You'll learn how to use the srcset attribute to create responsive images. You'll also learn how to use the sizes attribute to create responsive images.",
+        "image": "../static/images/courses/responsive-images.png",
+        "duration": "1 hour and 4 minutes",
+        "screenshot_image": "../static/images/courses/responsive-images.png",
     },
     {
-        "id":
-        "6",
-        "name":
-        "Course 6",
-        "description":
-        "The sixth course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+6",
-        "duration":
-        "8 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        'id': 'git',
+        'name': 'Version Control with Git',
+        'description': 'Learn the essential skills to work with Git.',
+        'large_description': 'Learn the essential skills to work with Git. You\'ll learn how to use Git and GitHub to manage your code. You\'ll also learn how to use Git to collaborate with others.',
+        'image': '../static/images/courses/git.png',
+        'duration': '1 hour and 5 minutes',
+        'screenshot_image': '../static/images/courses/git.png',
     },
     {
-        "id":
-        "7",
-        "name":
-        "Course 7",
-        "description":
-        "The seventh course description",
-        "image":
-        "https://via.placeholder.com/468x300?text=Course+7",
-        "duration":
-        "9 months",
-        "screenshot_image":
-        "https://via.placeholder.com/1280x720?text=Course+Screenshot",
+        'id': 'python-intro',
+        'name': 'Introduction to Python Programming',
+        'description': 'Learn the basics of Python programming.',
+        'large_description': 'Learn the basics of Python programming. You\'ll learn how to use Python to build applications and programs.',
+        'image': '../static/images/courses/python-intro.png',
+        'duration': '3 hours and 37 minutes',
+        'screenshot_image': '../static/images/courses/python-intro.png',
     },
+    {
+        'id': 'oop-python',
+        'name': 'Object-Oriented Programming in Python',
+        'description': 'Learn the fundamentals of object-oriented programming in Python.',
+        'large_description': 'Learn the fundamentals of object-oriented programming in Python. You\'ll learn how to create objects, how to define properties and methods, and how to use inheritance.',
+        'image': '../static/images/courses/oop-python.png',
+        'duration': '10 hours and 58 minutes',
+        'screenshot_image': '../static/images/courses/oop-python.png',
+    },
+    {
+        'id': 'sql-database',
+        'name': 'Intro to Relational Databases',
+        'description': 'Learn the basics of relational databases.',
+        'large_description': 'Learn the basics of relational databases. You\'ll learn how to create tables, how to insert data, and how to query data.',
+        'image': '../static/images/courses/sql-database.png',
+        'duration': '1 hour and 10 minutes',
+        'screenshot_image': '../static/images/courses/sql-database.png',
+    },
+    {
+        'id': 'python-web-development',
+        "name": "Flask Tutorial",
+        "description": "Learn how to build a simple website with Flask.",
+        "large_description": "Python Flask Tutorials. In this series, we will be learning how to build a full-feature Flask application for scratch. We will learn how to get started with Flask, use templates, create a database, upload pictures, create an authentication system, and much much more.",
+        "image": "../static/images/courses/python-web-development.png",
+        "duration": "14 hour and 11 minutes",
+        "screenshot_image": "../static/images/courses/python-web-development.png",
+    },
+    {
+        "id": "full-stack-web-development",
+        "name": "Full Stack Foundations",
+        "description": "Learn the fundamentals of full-stack web development.",
+        "large_description": "In this course you will learn the fundamentals of back-end web development! You will create your own web application that queries a database for items on restaurant menus and then dynamically generates complete menus in the form of web pages and API endpoints.",
+        "image": "../static/images/courses/full-stack-web-development.png",
+        "duration": "3 hours and 45 minutes",
+        "screenshot_image": "../static/images/courses/full-stack-web-development.png",
+    }
+
+
 ]

@@ -12,14 +12,20 @@
   <h1>{{course.name}}</h1>
   <p class="lead">{{course.description}}</p>
   <hr />
-  <h3>Time to complete</h3>
-  <p>{{course.duration}}</p>
-  <h3>Screenshot</h3>
-  <img
-    src="{{course.screenshot_image}}"
-    class="img-fluid rounded mb-3"
-    alt="{{course.name}} Screenshot"
-  />
-</div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Course Description</h3>
+      <p>{{course.large_description}}</p>
+    </div>
+    <h3>Time to complete</h3>
+    <p>{{course.duration}}</p>
+    <h3>Screenshot</h3>
+    <img
+      src="{{course.screenshot_image}}"
+      class="img-fluid rounded mb-3"
+      alt="{{course.name}} Screenshot"
+    />
+  </div>
 
-{% endblock %}
+  {% endblock %}
+</div>
