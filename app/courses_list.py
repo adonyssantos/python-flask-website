@@ -119,4 +119,14 @@ courses_list = [
         "duration": "7 hour and 27 minutes",
         "screenshot_image": "../static/images/courses/software-security.png",
     },
+    {
+        "id": "oauth",
+        "name": "Autenticación y autorización: OAuth",
+        "description": "Learn how to use OAuth to authenticate users.",
+        "large_description": "Learn how to use OAuth to authenticate users. You'll learn how to create an OAuth application, how to create an OAuth client, and how to use OAuth to authenticate users.",
+        "image": "../static/images/courses/oauth.png",
+        "duration": "7 hours and 56 minutes",
+        "screenshot_image": "../static/images/courses/oauth.png",
+    },
+
 ]
