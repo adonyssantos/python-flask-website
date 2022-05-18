@@ -128,5 +128,22 @@ courses_list = [
         "duration": "7 hours and 56 minutes",
         "screenshot_image": "../static/images/courses/oauth.png",
     },
-
+    {
+        "id": "cic-evaluation-app",
+        "name": "OAuth Evaluation App",
+        "description": "Learn how to create an OAuth with Google, Facebook, and GitHub.",
+        "large_description": "This is an app made with React and Firebase where you can create, read, update and delete tasks within a task list. The user can only create, read, update and delete the tasks that belong to him. For that, the user must be logged in with Google, Facebook or Github.",
+        "image": "../static/images/courses/cic-evaluation-app.png",
+        "duration": "15 hours and 6 minutes",
+        "screenshot_image": "../static/images/courses/cic-evaluation-app.png",
+    },
+    {
+        "id": "agile-software-development",
+        "name": "Agile Software Development",
+        "description": "Learn how to work in an Agile software development team.",
+        "large_description": "Learn how to work in an Agile software development team. You'll learn how to use Scrum and Kanban to create a software development team.",
+        "image": "../static/images/courses/agile-software-development.png",
+        "duration": "11 hours and 55 minutes",
+        "screenshot_image": "../static/images/courses/agile-software-development.png",
+    }
 ]
