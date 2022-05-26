@@ -6,7 +6,10 @@ This project is the result of a series of tutorials and courses I've taken on Ci
 
 ## Screenshots
 
-![Web Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://user-images.githubusercontent.com/58638286/170557223-07a6123b-88be-4f4c-920d-6b670aa9e1f1.png)
+
+![image](https://user-images.githubusercontent.com/58638286/170557288-3921a308-b7b3-4c2d-b99f-1af495e8c459.png)
+
 
 ## Usage
 
